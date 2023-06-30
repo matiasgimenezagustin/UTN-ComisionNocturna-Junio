@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    color:gray;
+    font-size: 52px;
+    text-align: center;
+    /* font-family:sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+.caja-magenta{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(151, 49, 246, 1);
+    border: greenyellow 5px solid;
+    border-left: blue 10px dotted;
+    border-radius: 30px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.caja-marron{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(134, 18, 18);
+    padding-top: 90px;
+    padding-left: 50px;
+    margin: 130px 50px 300px 40px;
+    border: 5px solid green;
+}
+
+.pantalla{
+    height: 100vh;
+    background-color: aqua;
+    text-align: center;
+}
+
+.pantalla div{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    overflow-y: scroll;
+}
+.pantalla span{
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    font-size: 70px;
+    margin-right: 30px;
+    font-weight: 900;
+    -webkit-text-stroke: 3px rgb(0, 255, 0);
+    color: rgba(0, 0, 0, 0.485);
+    overflow-x: scroll;
+}
+
+.pantalla .especial{
+    background-color: blue;
+    overflow-y: visible;
+    word-break: break-all;
+    word-spacing: 30px;
+    letter-spacing: 30px;
+}
+
+.pantalla .especial:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: wait;
+}

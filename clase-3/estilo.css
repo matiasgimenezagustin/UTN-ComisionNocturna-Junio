@@ -1,0 +1,40 @@
+/* COMENTARIO DE CSS */
+
+/* CSS = Cascade Style Sheet */
+
+h1{
+    color: red;
+}
+
+/* selector de class */
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-bottom: 50px;
+}
+
+#subtitulo{
+    color: greenyellow;
+}
+
+
+/* a{
+    color: blueviolet !important;
+}
+a{
+    color: black !important;
+    background-color: gray !important;
+    font-size: 24px !important;
+} */
+
+.contenedor{
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contenedor h2{
+    color: white;
+}
