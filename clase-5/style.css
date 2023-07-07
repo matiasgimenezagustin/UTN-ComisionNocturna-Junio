@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.padre{
+    background-color: greenyellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    background-color: white;
+}

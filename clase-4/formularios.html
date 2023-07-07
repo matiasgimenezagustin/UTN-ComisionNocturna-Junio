@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> <!-- Cabezal de la pagina -->
+        <h2>Mi pagina UTN</h2>
+        <nav>
+            <a href="./index.html">Producto</a>
+            <a href="">Servicio</a>
+            <a href="./formularios.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Completa el siguiente formulario de contacto</h1>
+        <form>
+            <div>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" placeholder="cosme fulanito" id="nombre" minlength="2" maxlength="12" required/>
+            </div>
+            <div>
+                <label for="email">Ingrese su email:</label>
+                <input type="email" placeholder="cosmefulanito@gmail.com" id="email"/>
+            </div>
+            <div>
+                <label for="contrasena">Ingrese su contraseña:</label>
+                <input type="password" placeholder="admin123" id="contrasena" required/>
+            </div>
+            <div>
+                <label for="edad">Ingrese su edad:</label>
+                <input value="18" type="number" placeholder="12" id="edad" min="300" max="400" required/>
+            </div>
+            <div>
+                <label for="color">Ingrese el color de su casa:</label>
+                <input type="color" placeholder="12" id="color"/>
+            </div>
+            <div>
+                <label for="tel">Ingrese el telefono</label>
+                <input type="tel" placeholder="123243241" id="tel"/>
+            </div>
+            <div>
+                <label for="terYcond">Esta de acuerdo con los terminos y condiciones:</label>
+                <input type="checkbox" checked id="terYcond"/>
+            </div>
+            <div>
+                <label for="pais">Seleccione su pais</label>
+                <select id="pais">
+                    <option>Argentina</option>
+                    <option>Chile</option>
+                    <option>Peru</option>
+                    <option>Bolivia</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Ingrese algun mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </main>
+</body>
+</html>

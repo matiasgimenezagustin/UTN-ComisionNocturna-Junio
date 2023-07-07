@@ -1,0 +1,76 @@
+/* normalizacion */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    font-size: 30px;
+}
+
+.parrafo:nth-child(1){
+    font-size: 200%;
+    width: 100%;
+    background-color: aqua;
+    border: 20px blueviolet solid;
+}
+.parrafo:nth-child(2){
+    font-size: 2em;
+}
+.parrafo-container{
+    width: 50vw;
+    height: 50vh;
+    font-size: 10px;
+    background-color: green;
+}
+
+.text{
+    font-size: 3rem;
+}
+
+
+header{
+    background-color: black;
+    padding: 2vh 5vw;
+}
+
+header h2{
+    color: white;
+    display: inline-block;
+}
+header nav{
+    display: inline-block;
+    margin-left: 50%;
+}
+header nav a{
+    color: white;
+}
+
+
+.padre{
+    width: 100%;
+
+    border: 1px black solid;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 0px;
+    background-color: blueviolet;
+    margin: 300px auto;
+    box-shadow: 200px 200px 100px 20px black,
+                -100px -100px 5px gray,
+                inset 0 0 20px 10px black
+                ;
+}
+
+.caja:hover{
+    transition: 750ms ease-in-out;
+    background-color: blue;
+    box-shadow: 0px 0px  black;
+}
