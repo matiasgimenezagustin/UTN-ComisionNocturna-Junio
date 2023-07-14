@@ -52,6 +52,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    font-size: 40px;
 
 }
 
@@ -88,4 +89,42 @@ header{
 .banner{
     height: 100px;
     background-color: brown;
+}
+
+.wsp-link{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92, 138, 24);
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    z-index:5;
+    font-size: 1.2rem;
+}
+
+
+.cartContainer{
+    position: relative;
+    font-size: 30px;
+    width: 35px;
+}
+
+.counter{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    top: -5px;
+    right: 0;
 }
