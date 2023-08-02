@@ -1,0 +1,14 @@
+Dado los siguientes textos
+"hola%20como%20estas,%20todo%bien?" 
+"no%20me%20siento%20bien"
+"que%20mal"
+
+descifrar el codigo y mostrarlo por consola: "El codigo descifrado es: " + codigoDescifrado
+Averiguar la cantidad de caracteres y en base a el numero de caracteres mostrar
+
+"el mensaje es corto" entre 1 y 8 caracteres
+"el mensaje es mediano" entre 9 y 18
+"el mensaje es largo"  mas de 18
+
+Ademas si el mensaje cuenta con ",", "@", "-" debera decir, "el mensaje es complejo", sino decir
+"el mensaje no es complejo" 

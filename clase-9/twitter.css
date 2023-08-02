@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --bg-color: #080E24;
+    --tw-icon-color: #1090F2;
+    --placeholder-input-color: #888;
+    --primary-color: rgba(127, 202, 255, 0.08);
+}
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+}
+
+.searcherContainer{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.searcherContainer input{
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px;
+    border-radius: 21px;
+}
+.searcherContainer input::placeholder{
+    color: var(--placeholder-input-color)
+}
+
+.searcherContainer .bi{
+    color: var(--tw-icon-color);
+    font-size: 2.5rem;
+}
+
+
+/* Navbar */
+
+nav{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+nav .btn-home{
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 21px;
+}
+
+nav .btn-home .bi{
+    color: var(--tw-icon-color);
+    font-size: 1.7rem;
+}
+
+
+nav .divider{
+    width: 2px;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+nav a{
+    font-size: 1.7rem;
+}
+
+nav .accountSelector{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 48px;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+nav .accountSelector .accountImageContainer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 700;
+    
+}
+
+.accountSelector .accountImageContainer img{
+    width: 100%;
+}

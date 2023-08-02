@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 6fr 5fr;
+    grid-template-areas: 
+    'nav nav nav'
+    'profileInfo main trends'
+    'mayYouKnow main trends'
+    ;
+    min-height: 100vh;
+}
+header{
+    grid-area: nav;
+    background-color: blue;
+}
+main{
+    grid-area: main;
+    background-color: brown;
+}
+.profileInfo{
+    grid-area: profileInfo;
+    background-color: cadetblue;
+}
+.mayYouKnow{
+    grid-area: mayYouKnow;
+    background-color: chartreuse;
+}
+.trends{
+    grid-area: trends;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px 100px 100px auto;
+        grid-template-areas:
+        'nav'
+        'mayYouKnow'
+        'profileInfo'
+        'main'
+        'trends' ;
+    }
+}
