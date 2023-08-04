@@ -1,0 +1,27 @@
+1)Imprime los números del 1 al 10
+2)Imprime los números pares del 2 al 20
+3)Imprime los números impares del 1 al 19
+4)Imprime los números del 10 al 1 en orden inverso
+5)Imprime los números del 1 al 10, pero se detiene al llegar al 5
+6)Nada
+
+7)Crea una función llamada decirNombre(nombre) y nos ejecute una alerta “Hola “ + nombre
+8)Crea una función llamada saludar(nombre) y nos devuelva un  string  “Hola “ + nombre y luego invoca la función dentro de una alerta
+9)Crea una función llamada sumar(a,b) y nos devuelva la suma de a y b
+10)Crea una función llamada restar(a,b) y nos devuelva la resta de a y b
+11)Crea una función llamada calcular(operación,a,b) y dependiendo de si la operación es “+” o “-” invocar la función sumar(a,b) o restar(a,b) (retornar el resultado), en caso de recibir una operación no válida devolver null 
+12)Crea una función llamada contarHasta(número) y nos cuente hasta ese número por consola
+
+
+
+13)
+Dado un array de números, escribir una función que calcule la suma de todos los números del array.
+ejemplo: const numeros = [4,9,2,3]
+14)
+Dado un array de strings, escribir una función que devuelva la concatenación de todos los strings.
+ej: const txt = ['dasdsa', 'asdsad']
+15)
+Dado un array de números, escribir una función que devuelva un array con todos los números mayores a 10.
+
+16)
+Dado un array de números, escribir una función que devuelva la suma de todos los números del array que sean pares.

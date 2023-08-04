@@ -115,7 +115,7 @@ console.log(nombre) */
 
 /* ARRAY, matrices, listas, vector, arreglo */
 
-const listaDeAlumnos = ['Lau', 'Gus', 'Damian', 'Bianca', 'Luca', 'Luis']
+/* const listaDeAlumnos = ['Lau', 'Gus', 'Damian', 'Bianca', 'Luca', 'Luis']
 
 const listaDeNotas = [1, 10, 2, -3]
 
@@ -133,4 +133,27 @@ console.log(listaDeAlumnos[10])
 
 listaDeAlumnos[0] = 'Laureano'
 
-listaDeAlumnos[6] = 'pepe'
+listaDeAlumnos[6] = 'pepe' */
+
+let textoA = "hola%20como%20estas%20todo%20bien?" 
+let textoB = "no%20me%20siento%20bien"
+let textoC = "que%20mal-"
+let texto = textoA + textoB + textoC
+    texto = texto.replaceAll(`%20`, ` `)
+    console.log(`El codigo descifrado es: ${texto}`)
+
+        if (texto.length <= 8){ 
+        console.log (`el mensaje es corto`)
+        }
+        else if (texto.length <= 18) {
+        console.log (`el mensaje es mediano`)
+        }
+        else {
+        console.log (`el mensaje es largo`)
+        }
+if (texto.includes('@') || texto.includes(',')  || texto.includes('-')){
+    console.log(`el mensaje es complejo`)
+}
+else {
+    console.log(`el mensaje no es complejo`)
+}
