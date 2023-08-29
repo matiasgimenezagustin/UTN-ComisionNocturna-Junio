@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(167, 0, 0);
+        }
+
+        .ocultar{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="botonAlertar">Dar alerta</button>
+    <button id="botonMostrarMensaje">Dar mensaje</button>
+    <button onclick="handleClickAlert()" onmouseover="sensor()" onmouseout="sensorSalida()">Dar Alerta de manera distinta</button>
+    <button id="buttonCorrecto">Soy un boton correcto</button>
+    
+    <div class="caja"></div>
+    <br>
+    <br>
+    <button class="btnDecrementar">
+        -
+    </button>
+    <span id="contador">1</span>
+    <button class="btnIncrementar">
+        +
+    </button>
+    <span style="color: red;" class="msjError">NO PUEDES CONTAR MENOS DE 1</span>
+
+    <br>
+    <button id="btnVer">Ver mensaje</button>
+    <span id="mensaje" class="ocultar">Hola soy un mensaje</span>
+
+
+
+    
+
+    <script src="./script.js"></script>
+   
+</body>
+</html>
+
+
+<!-- https://docs.google.com/spreadsheets/d/16iaM89u5EOp7JzxvpEr76_NSkl9ko3-2SvbeEeCjHwM/edit#gid=0 -->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @keyframes entrar {
+            0%{
+                opacity: 0;
+                height: 0;
+                width: 140px;
+            }
+            100%{
+                opacity: 1;
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            border-radius: 10px;
+            animation-name: entrar;
+            animation-timing-function: linear;
+            animation-duration: 400ms;
+        }
+        .ocultar{
+            display: none;
+        }
+        button{
+            width: 140px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-show">Mostrar animacion</button>
+
+    <div class="box ocultar">hola<script>console.log('hola')</script> <span style="display: none;"> hola oculto </span></div>
+
+
+    <div id="contenedor">
+
+    </div>
+    <div id="productos"></div>
+    <script src="./swapi.js"></script>
+</body>
+</html>

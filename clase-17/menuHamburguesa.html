@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .btnMenu{
+            display: none;
+        }
+
+        @media screen and (max-width:600px) {
+            .btnMenu{
+                display: flex;
+                align-items: center;
+            }
+            nav{
+                display: none;
+            }
+            .logo{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            header{
+                flex-direction: column;
+            }
+        }
+        .mostrar{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>TodoProgramas</h2>
+            <button class="btnMenu"><i class="bi bi-list"></i></button>
+        </div>
+        
+        <nav id="nav">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">Product</a>
+            <a href="">Pircing</a>
+        </nav>
+
+        
+    </header>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html>

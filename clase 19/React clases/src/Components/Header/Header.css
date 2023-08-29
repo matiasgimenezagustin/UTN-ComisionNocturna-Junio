@@ -1,0 +1,8 @@
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 5vh 3vw;
+}
