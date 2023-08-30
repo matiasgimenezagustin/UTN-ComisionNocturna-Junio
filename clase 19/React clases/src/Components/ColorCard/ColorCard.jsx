@@ -1,33 +1,41 @@
 import React from 'react'
 import {AiOutlineHeart, AiFillHeart} from 'react-icons/ai'
-
-const ColorCard = ({likes}) => {
+import './colorCard.css'
+const ColorCard = ({likes, date, colores, id}) => {
     
+
+
+
   return (
     <div className='colorCard'>
         <div className='colores'>
-            <div>
-                <span>#0E21A0</span>
-            </div>
-            <div>
-                <span>#4D2DB7</span>
-            </div>
-            <div>
-                <span>#9D44C0</span>
-            </div>
-            <div>
-                <span>#EC53B0</span>
-            </div>
+            <ColorsList colors={colores}/>
         </div>
         <div className='colorCardControls'>
             <button>
                 <AiOutlineHeart/>
                 {likes}
             </button>
-            <span>22 Hours</span>
+            <span>{date}</span>
+          
         </div>
     </div>
   )
 }
 
 export default ColorCard
+
+
+const ColorsList = ({colors}) =>{
+    return(
+        <>
+            {
+                colors.map((color, index) =>(
+                    <div key={index} style={{backgroundColor: color}}>
+                        <span>{color}</span>
+                    </div>
+                ))
+            }
+        </>
+    )
+}

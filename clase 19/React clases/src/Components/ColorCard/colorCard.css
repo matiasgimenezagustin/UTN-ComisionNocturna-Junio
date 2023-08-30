@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+}
+
+.colorCard{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorCard .colores{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.colorCard .colores div:nth-child(1){
+    flex: 4;
+}
+.colorCard .colores div:nth-child(2){
+    flex: 3;
+}
+.colorCard .colores div:nth-child(3){
+    flex: 2;
+}
+
+.colorCard .colores div:nth-child(4){
+    flex: 1.5;
+}
+.colorCard .colores div {
+    display: flex;
+    align-items: end;
+
+}
+
+.colorCard .colores div span{
+    display: none;
+}
+
+.colorCard .colores div:hover span{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.276);
+    color: white;
+    padding: 5px;
+}
+
+
+.cardColorsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

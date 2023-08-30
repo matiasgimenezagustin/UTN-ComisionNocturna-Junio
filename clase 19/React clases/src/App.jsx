@@ -1,24 +1,18 @@
 import React from 'react'
 import { ColorCard, Header } from './Components'
+import { colorCards } from './dataColors'
 
 
 const App = () => {
-  const carta1 ={
-    likes: 120, 
-    date: 'yesterday',
-    colores: [
-      '#0E21A0',
-      '#4D2DB7',
-      '#9D44C0',
-      '#EC53B0'
-    ],
-    id: 1
-  }
+  
   return (
-    <div>
-      <ColorCard likes={120}/>
-      <ColorCard likes={40}/>
-      <ColorCard likes={50}/>
+    <div className='cardColorsList'>
+      
+      {
+        colorCards.map(({likes, colores, date, id}) =>(
+          <ColorCard likes={likes} colores={colores} id={id} date={date} key={id}/>
+        ) )
+      }
     </div>
   )
 }
