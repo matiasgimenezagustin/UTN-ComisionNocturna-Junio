@@ -1,10 +1,16 @@
 import React from 'react'
-import { Eventos } from './Components'
+import { ColorCard, Eventos } from './Components'
+import { colorCards } from './dataColors'
 
 const App = () => {
   return (
-    <div>
-      <Eventos/>
+    <div className='cardColorsList'>
+      
+      {
+        colorCards.map(({likes: meGusta, colores, id, date}) =>(
+          <ColorCard likes={meGusta} colores={colores} id={id} date={date} key={id}/>
+        ) )
+      }
     </div>
   )
 }
