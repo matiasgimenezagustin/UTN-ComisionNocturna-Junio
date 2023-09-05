@@ -1,4 +1,6 @@
 import Header from "./Header/Header"
 import ColorCard from "./ColorCard/ColorCard"
 import Eventos from "./Eventos/Eventos"
-export { Header, ColorCard, Eventos}
+import ListaCartonesLoteria from "./ListaCartonesLoteria"
+
+export { Header, ColorCard, Eventos,ListaCartonesLoteria}
