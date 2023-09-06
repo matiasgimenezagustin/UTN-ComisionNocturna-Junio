@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const ListaCartonesLoteria = () => {
 
@@ -22,7 +22,8 @@ const ListaCartonesLoteria = () => {
 
     const [cartonesSeleccionados, setCartonesSeleccionados] = useState([])
     const [searchString, setSearchString] =useState('')
-    const [listaProductos, setListaCartones] = useState(cartonesLoteria)
+    const [productosCaros, setProductosCaros] =  useState(false)
+    const [listaProductos, setListaProductos] = useState(cartonesLoteria)
 
     const handleSelectCarton = ( id) =>{
         
@@ -50,12 +51,27 @@ const ListaCartonesLoteria = () => {
         setSearchString(evento.target.value)
 
     }
+    const handleCheckProductosCaros = () =>{
+        setProductosCaros(!productosCaros)
+    }
+
+    useEffect(()=>{
+        if(productosCaros){
+            setListaProductos(listaProductos.filter(producto => producto.precio >= 1000))
+        }
+        else{
+            setListaProductos(cartonesLoteria)
+        }
+        
+    }, [productosCaros])
 
     console.log(cartonesSeleccionados)
     return (
         <div>
             <div>
                 <input type="text" placeholder='Busca tu producto' value={searchString} onChange={handleFilterProducto} />
+                <label htmlFor="">Filtrar por precios mayores a $1000:</label>
+                <input type='checkbox' checked={productosCaros} onChange={handleCheckProductosCaros} />
             </div>
             {
                 listaProductos.filter( 
