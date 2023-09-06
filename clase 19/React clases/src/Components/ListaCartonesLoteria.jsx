@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const ListaCartonesLoteria = () => {
 
@@ -21,6 +21,9 @@ const ListaCartonesLoteria = () => {
     ]
 
     const [cartonesSeleccionados, setCartonesSeleccionados] = useState([])
+    const [searchString, setSearchString] =useState('')
+    const [listaProductos, setListaCartones] = useState(cartonesLoteria)
+
     const handleSelectCarton = ( id) =>{
         
 
@@ -42,12 +45,24 @@ const ListaCartonesLoteria = () => {
         })
         return total
     }
+
+    const handleFilterProducto = (evento) =>{
+        setSearchString(evento.target.value)
+
+    }
+
     console.log(cartonesSeleccionados)
     return (
         <div>
+            <div>
+                <input type="text" placeholder='Busca tu producto' value={searchString} onChange={handleFilterProducto} />
+            </div>
             {
-                cartonesLoteria.map((carton) =>(
-                    <CartonLoteria nombre={carton.nombre} id={carton.id} precio={carton.precio} handleSelectCarton={handleSelectCarton} key={carton.id}/>
+                listaProductos.filter( 
+                    cartones => cartones.nombre.toLowerCase().includes(searchString.toLowerCase()) /* aca condicionamos por el string buscado */
+                )
+                .map(({nombre, id, precio }) =>(
+                    <CartonLoteria nombre={nombre} id={id} precio={precio} handleSelectCarton={handleSelectCarton} key={id}/>
                 ))
             }
             <h3>Total: ${calcularTotal()}</h3>
