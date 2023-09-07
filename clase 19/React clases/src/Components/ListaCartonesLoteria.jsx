@@ -56,16 +56,16 @@ const ListaCartonesLoteria = () => {
     }
 
     useEffect(()=>{
+        console.log('me ejecuto')
         if(productosCaros){
-            setListaProductos(listaProductos.filter(producto => producto.precio >= 1000))
+            setListaProductos(cartonesLoteria.filter(producto => producto.nombre.toLowerCase().includes(searchString.toLowerCase()) ).filter(producto => producto.precio >= 1000))
         }
         else{
-            setListaProductos(cartonesLoteria)
+            setListaProductos(cartonesLoteria.filter(producto => producto.nombre.toLowerCase().includes(searchString.toLowerCase()) ))
         }
         
-    }, [productosCaros])
+    }, [productosCaros, searchString])
 
-    console.log(cartonesSeleccionados)
     return (
         <div>
             <div>
@@ -74,10 +74,7 @@ const ListaCartonesLoteria = () => {
                 <input type='checkbox' checked={productosCaros} onChange={handleCheckProductosCaros} />
             </div>
             {
-                listaProductos.filter( 
-                    cartones => cartones.nombre.toLowerCase().includes(searchString.toLowerCase()) /* aca condicionamos por el string buscado */
-                )
-                .map(({nombre, id, precio }) =>(
+                listaProductos.map(({nombre, id, precio }) =>(
                     <CartonLoteria nombre={nombre} id={id} precio={precio} handleSelectCarton={handleSelectCarton} key={id}/>
                 ))
             }
