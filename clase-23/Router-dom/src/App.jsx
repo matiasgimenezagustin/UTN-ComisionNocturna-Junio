@@ -1,12 +1,12 @@
 import React from 'react'
 import { bodyStyle, buttonStyle } from './styles'
+import PageRouter from './router/PageRouter'
+
 function App() {
 
   return (
     <>
-      <div >
-        <button >Hola</button>
-      </div>
+      <PageRouter/>
     </>
   )
 }

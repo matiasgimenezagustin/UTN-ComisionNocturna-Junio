@@ -6,4 +6,4 @@ import ProductDetail from "./ProductDetail";
 
 
 
-export{Home, Contact, ProductDetail, Cart}
+export {Home, Contact, ProductDetail, Cart}
