@@ -22,8 +22,6 @@ const Home = () => {
 export default Home
 
 
-import React from 'react'
-
 const Card = ({categoria, nombre, precio, id}) => {
     return (
         <div>

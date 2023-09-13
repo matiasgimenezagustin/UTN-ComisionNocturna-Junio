@@ -7,6 +7,7 @@ const PageRouter = () => {
   return (
     <>
         <Routes>
+            <Route path='/' element={<Home/>}/>
             <Route path='/home' element={<Home/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/detail/:id' element={<ProductDetail/>}/>
